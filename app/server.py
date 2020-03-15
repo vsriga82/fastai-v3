@@ -9,10 +9,14 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1iGmyQRdJxYh5ekr4xC9eRdVHPC-60lzh'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1h1kJ5YF7X_hl5CQwth_xBznWKHshy06A'
 export_file_name = 'export.pkl'
 
-classes = ['cheese', 'paneer', 'tofu']
+classes = ['ash gourd','asparagus','bamboo shoot','basil','beans','beetroot','bitter gourd','black raddish','bottle gourd','brinjal','broccoli','cabbage','capsicum','carrot',
+           'cauliflower','celeriac','chayote','chilli','chinese artichokes','cluster beans','coconut','colocasia','coriander leaves','corn','cucumber','curry leaves','dill',
+           'drumstick','dulse','elephant yam','fenugreek leaves','fiddleheads','flat beans','garlic','ginger','gooseberry','green mango','ivy gourd','kohlrabi','lemon','lime',
+           'long beans','lotus root','mint','mushroom','nopal','oca','okra','onion','peas','plantain','plantain flower','plantain stem','potato','pumpkin','ramps','red chilli',
+           'red raddish','ridge gourd','romanesco','shallots','snake gourd','sweet potato','tapioca','tomato','turnip','white onion','white raddish','yam', 'zuchini']
 path = Path(__file__).parent
 
 app = Starlette()
